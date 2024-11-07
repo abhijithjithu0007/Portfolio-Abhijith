@@ -1,10 +1,10 @@
 'use client'
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { useInputFieldReveal } from "../Hooks/gsap";
 import emailjs from "@emailjs/browser";
-// import { toast } from "react-toastify";
+import * as Toast from '@radix-ui/react-toast'; 
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -13,48 +13,35 @@ const Contact = () => {
   const messageRef = useRef(null);
   const btnRef = useRef(null);
   const contactFieldRef = [nameRef, emailRef, messageRef, btnRef];
+  const [open, setOpen] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
+  const [toastType, setToastType] = useState("success"); 
 
   useInputFieldReveal(contactFieldRef, 1.5);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    //emailjs integration
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         formRef.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
-      // .then(
-      //   () => {
-      //     toast.success("Message Send Successfully", {
-      //       position: "bottom-center",
-      //       autoClose: 4000,
-      //       hideProgressBar: false,
-      //       closeOnClick: true,
-      //       pauseOnHover: true,
-      //       draggable: true,
-      //       progress: undefined,
-      //       theme: "colored",
-      //     });
-      //   },
-      //   () => {
-      //     toast.error("🦄 Message Not Send", {
-      //       position: "bottom-center",
-      //       autoClose: 4000,
-      //       hideProgressBar: false,
-      //       closeOnClick: true,
-      //       pauseOnHover: true,
-      //       draggable: true,
-      //       progress: undefined,
-      //       theme: "colored",
-      //     });
-      //   }
-      // );
+      .then(
+        () => {
+          setToastMessage("Message Sent Successfully!");
+          setToastType("success");
+          setOpen(true); 
+        },
+        () => {
+          setToastMessage("Message Not Sent");
+          setToastType("error");
+          setOpen(true); 
+        }
+      );
 
-    //reset
     e.target.querySelector(".fullname").value = "";
     e.target.querySelector(".email").value = "";
     e.target.querySelector(".message").value = "";
@@ -112,6 +99,29 @@ const Contact = () => {
           />
         </div>
       </form>
+
+      <Toast.Provider>
+        <Toast.Root open={open} onOpenChange={setOpen} duration={4000}>
+          <Toast.Title
+            className="text-lg font-semibold text-white animate-fadeIn"
+          >
+            {toastType === "success" ? "Success!" : "Error"}
+          </Toast.Title>
+          <Toast.Description
+            className="text-sm text-white/80 animate-fadeIn"
+          >
+            {toastMessage}
+          </Toast.Description>
+          <Toast.Action
+            altText="Close"
+            onClick={() => setOpen(false)}
+            className="text-cyan-400 cursor-pointer animate-fadeIn"
+          >
+            Close
+          </Toast.Action>
+        </Toast.Root>
+        <Toast.Viewport className="fixed bottom-5 left-5 z-50 flex flex-col gap-4" />
+      </Toast.Provider>
     </div>
   );
 };
