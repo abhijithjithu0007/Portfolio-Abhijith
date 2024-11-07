@@ -2,7 +2,7 @@
 
 
 import React, { useRef } from 'react'
-import { useSectionTitleReveal } from '../Hooks/gsap'
+import { useSectionTitleReveal } from '../Hooks/anime'
 const SectionTitle = ({title}) => {
   const sectionTitleRef=useRef(null)
   useSectionTitleReveal(sectionTitleRef)

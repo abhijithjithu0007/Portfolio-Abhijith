@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef } from "react";
-import { useLinkReveal } from "../Hooks/gsap";
+import { useLinkReveal } from "../Hooks/anime";
 
 const Navbar = ({ footerNav }) => {
   const link1Ref = useRef(null);

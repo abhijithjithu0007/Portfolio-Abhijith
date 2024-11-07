@@ -1,17 +1,18 @@
-'use client'
+"use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useHoverEffect } from "../Hooks/useHoverEffect";
 import SectionTitle from "./SectionTitle";
-import { useProjectLeftrightReveal } from "../Hooks/gsap"; 
+import { useProjectLeftrightReveal } from "../Hooks/anime";
 
 const About = () => {
   const aboutLeftRef = useRef(null);
   const aboutRightRef = useRef(null);
-  const profile ='/assets/images/profile.png'
-  const discus= '/assets/images/discussion.jpg'
+  const profile = "/assets/images/profile.png";
+  const discus = "/assets/images/discussion.jpg";
 
   const aboutRefs = [aboutLeftRef, aboutRightRef];
+
   useHoverEffect(aboutLeftRef, discus, profile);
   useProjectLeftrightReveal(aboutRefs);
 

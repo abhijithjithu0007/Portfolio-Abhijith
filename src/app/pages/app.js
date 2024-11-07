@@ -1,16 +1,12 @@
-
-'use client'
-import { useRef } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import CustomCursor from "../components/CustomCursor";
 import Footer from "../components/Footer";
 import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 import Socials from "../components/Socials";
-import { useCustomCursor } from '../Hooks/useCustomCursor'
+import { useCustomCursor } from "../Hooks/useCustomCursor";
 import { useSmoothScroll } from "../Hooks/useSmoothScroll";
-
-// import { ToastContainer } from 'react-toastify'
-// import 'react-toastify/dist/ReactToastify.min.css';
 
 const App = () => {
   const innerCursorRef = useRef(null);
@@ -18,7 +14,7 @@ const App = () => {
 
   useSmoothScroll();
   useCustomCursor(innerCursorRef, outerCursorRef);
-  
+
   return (
     <div className="app">
       <div className="noise"></div>
@@ -28,10 +24,7 @@ const App = () => {
       />
       <Navbar />
       <Socials />
-      {/* <ToastContainer/> */}
-      
-        <Home />
-     
+      <Home />
       <Navbar footerNav />
       <Footer />
     </div>

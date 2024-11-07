@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef } from "react";
-import { useBioReveal } from "../Hooks/gsap";
+import { useBioReveal } from "../Hooks/anime";
 const Bio = () => {
   const boiRef = useRef(null);
   useBioReveal(boiRef, 2);

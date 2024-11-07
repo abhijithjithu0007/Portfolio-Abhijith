@@ -2,15 +2,18 @@
 
 import { useRef } from "react";
 import { useHoverEffect } from "../Hooks/useHoverEffect";
-import { useProjectLeftrightReveal } from "../Hooks/gsap";
+import { useProjectLeftrightReveal } from "../Hooks/anime";
 
 const Project = ({ project }) => {
   const projectRightRef = useRef(null);
   const projectLeftRef = useRef(null);
   const projectRefs = [projectRightRef, projectLeftRef];
 
-  useHoverEffect(projectRightRef, project.img1, project.img2);
-  useProjectLeftrightReveal(projectRefs);
+  
+    useHoverEffect(projectRightRef, project.img1, project.img2);
+    useProjectLeftrightReveal(projectRefs);
+  
+  
 
   return (
     <div className="project flex flex-col lg:grid lg:grid-cols-5 gap-5 p-5 lg:p-10 overflow-hidden">

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { useFooterReveal } from "../Hooks/gsap";
+import { useFooterReveal } from "../Hooks/anime";
 const Footer = () => {
   const footerRef = useRef(null);
 

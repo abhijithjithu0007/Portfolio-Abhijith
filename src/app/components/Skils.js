@@ -3,7 +3,7 @@
 
 import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
-import { useSkillLineReveal, useSkillTextReveal } from "../Hooks/gsap";
+import { useSkillLineReveal, useSkillTextReveal } from "../Hooks/anime";
 
 const data = [
   { id: 1, skill: "HTML" },

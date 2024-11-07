@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
-import { useInputFieldReveal } from "../Hooks/gsap";
+import { useInputFieldReveal } from "../Hooks/anime";
 import emailjs from "@emailjs/browser";
 import * as Toast from '@radix-ui/react-toast'; 
 

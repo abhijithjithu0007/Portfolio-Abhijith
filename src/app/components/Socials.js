@@ -1,22 +1,17 @@
 'use client'
 
 import { useRef } from "react";
-import { useSocialReveal } from "../Hooks/gsap";
+import { useSocialReveal } from "../Hooks/anime";
 const data = [
   {
-    id: 2,
+    id: 1,
     title: "Github",
     url: "https://github.com/abhijithjithu0007",
   },
   {
-    id: 3,
+    id: 2,
     title: "LinkedIn",
     url: "https://linkedin.com/in/abhijith-v-a19211281",
-  },
-  {
-    id: 4,
-    title: "Twitter",
-    url: "",
   },
 ];
 
