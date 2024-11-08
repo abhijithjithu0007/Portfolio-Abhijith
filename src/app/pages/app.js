@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import {useRef } from "react";
 import CustomCursor from "../components/CustomCursor";
 import Footer from "../components/Footer";
 import Home from "../components/Home";
