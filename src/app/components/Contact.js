@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import React, { useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { useInputFieldReveal } from "../Hooks/anime";
 import emailjs from "@emailjs/browser";
-import * as Toast from '@radix-ui/react-toast'; 
+import * as Toast from "@radix-ui/react-toast";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -15,7 +15,7 @@ const Contact = () => {
   const contactFieldRef = [nameRef, emailRef, messageRef, btnRef];
   const [open, setOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
-  const [toastType, setToastType] = useState("success"); 
+  const [toastType, setToastType] = useState("success");
 
   useInputFieldReveal(contactFieldRef, 1.5);
 
@@ -33,12 +33,12 @@ const Contact = () => {
         () => {
           setToastMessage("Message Sent Successfully!");
           setToastType("success");
-          setOpen(true); 
+          setOpen(true);
         },
         () => {
           setToastMessage("Message Not Sent");
           setToastType("error");
-          setOpen(true); 
+          setOpen(true);
         }
       );
 
@@ -102,14 +102,10 @@ const Contact = () => {
 
       <Toast.Provider>
         <Toast.Root open={open} onOpenChange={setOpen} duration={4000}>
-          <Toast.Title
-            className="text-lg font-semibold text-white animate-fadeIn"
-          >
+          <Toast.Title className="text-lg font-semibold text-white animate-fadeIn">
             {toastType === "success" ? "Success!" : "Error"}
           </Toast.Title>
-          <Toast.Description
-            className="text-sm text-white/80 animate-fadeIn"
-          >
+          <Toast.Description className="text-sm text-white/80 animate-fadeIn">
             {toastMessage}
           </Toast.Description>
           <Toast.Action

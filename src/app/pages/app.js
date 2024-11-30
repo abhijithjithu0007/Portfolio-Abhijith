@@ -1,5 +1,5 @@
 "use client";
-import {useRef } from "react";
+import { useRef } from "react";
 import CustomCursor from "../components/CustomCursor";
 import Footer from "../components/Footer";
 import Home from "../components/Home";
@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Socials from "../components/Socials";
 import { useCustomCursor } from "../Hooks/useCustomCursor";
 import { useSmoothScroll } from "../Hooks/useSmoothScroll";
+import FireworksEffect from "../Hooks/customClick";
 
 const App = () => {
   const innerCursorRef = useRef(null);
@@ -22,6 +23,7 @@ const App = () => {
         innerCursorRef={innerCursorRef}
         outerCursorRef={outerCursorRef}
       />
+      <FireworksEffect />
       <Navbar />
       <Socials />
       <Home />

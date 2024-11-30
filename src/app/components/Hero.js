@@ -9,7 +9,7 @@ const Hero = () => {
     img1: "https://res.cloudinary.com/dgjjgijyu/image/upload/v1675868936/portfolio-project/hero-1_tjrcuk.jpg",
     img2: "https://res.cloudinary.com/dgjjgijyu/image/upload/v1675868832/portfolio-project/hero-2_ewchqt.png",
   };
-  const heroimg =  '/assets/images/heroimg.webp'
+  const heroimg = "/assets/images/heroimg.webp";
 
   const heroImageRef = useRef(null);
   const heroHeadLine1Ref = useRef(null);
