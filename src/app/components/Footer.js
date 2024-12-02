@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="#home" className="link-item hover:text-white duration-500">
           Abhijith
         </a>
-        . Crafted by yours truly
+        . All Rights Reserved
       </p>
     </footer>
   );
