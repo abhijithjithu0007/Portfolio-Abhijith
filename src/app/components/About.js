@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { useHoverEffect } from "../Hooks/useHoverEffect";
 import SectionTitle from "./SectionTitle";
 import { useProjectLeftrightReveal } from "../Hooks/anime";
@@ -39,7 +39,7 @@ const About = () => {
             free to reach out via the contact form on the website.
           </p>
           <a
-            href="https://drive.google.com/file/d/1twIdWPAu5qTa1UVPVwhGJCsj0bO2BfCj/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1-P9j_B41JrcVnmyA1YloDzGEvDjpremt/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
             className="inline-block mt-10 uppercase py-8 px-14 border border-white/25 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"

@@ -1,29 +1,34 @@
-
-'use client'
+"use client";
 
 import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import { useSkillLineReveal, useSkillTextReveal } from "../Hooks/anime";
 
 const data = [
-  { id: 1, skill: "HTML" },
-  { id: 2, skill: "CSS" },
-  { id: 3, skill: "Bootstrap" },
-  { id: 4, skill: "Tailwind CSS" },
-  { id: 5, skill: "JavaScript" },
-  { id: 6, skill: "React.Js" },
-  { id: 7, skill: "Axios" },
-  { id: 8, skill: "Sass" },
-  { id: 9, skill: "Vercel" },
-  { id: 10, skill: "Jest.Js" },
-  { id: 11, skill: "Postman" },
-  { id: 12, skill: "Cloudinary" },
-  { id: 13, skill: "Next.Js" },
-  { id: 14, skill: "Mongoose" },
-  { id: 15, skill: "Express.Js" },
-  { id: 16, skill: "Node.Js" },
-  { id: 17, skill: "Git" },
-  { id: 18, skill: "GitHub" },
+  { id: 1, skill: "HTML5" },
+  { id: 2, skill: "CSS3" },
+  { id: 3, skill: "Tailwind CSS" },
+  { id: 4, skill: "JavaScript" },
+  { id: 5, skill: "TypeScript" },
+  { id: 6, skill: "React.js" },
+  { id: 7, skill: "Next.js" },
+  { id: 8, skill: "Redux" },
+  { id: 9, skill: "TanStack Query" },
+  { id: 10, skill: "Express.js" },
+  { id: 11, skill: "Node.js" },
+  { id: 12, skill: "MongoDB" },
+  { id: 13, skill: "MySQL" },
+  { id: 14, skill: "SASS" },
+  { id: 15, skill: "Material UI" },
+  { id: 16, skill: "Git" },
+  { id: 17, skill: "GitHub" },
+  { id: 18, skill: "Firebase" },
+  { id: 19, skill: "Vercel" },
+  { id: 20, skill: "Jest.js" },
+  { id: 21, skill: "Render" },
+  { id: 22, skill: "Razorpay" },
+  { id: 23, skill: "Self-Learning" },
+  { id: 24, skill: "Scrum & Agile" },
 ];
 
 const Skills = () => {

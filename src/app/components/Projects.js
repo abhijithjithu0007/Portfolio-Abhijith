@@ -4,6 +4,8 @@ const doque1 = "../assets/images/doque1.jpg";
 const doque2 = "../assets/images/doque2.jpg";
 const furniqo1 = "../assets/images/furniqo1.png";
 const furniqo2 = "../assets/images/furniqo2.png";
+const allrecipes1 = "../assets/images/allrecipes1.png";
+const allrecipes2 = "../assets/images/allrecipes2.png";
 
 const data = [
   {
@@ -37,6 +39,26 @@ const data = [
     liveLink: "https://furniqo.vercel.app",
     fontEndLink: "https://github.com/abhijithjithu0007/Furniqo-E-Commerce",
     backEndLink: "https://github.com/abhijithjithu0007/ECOMMERCE-BACKEND",
+  },
+  {
+    id: 3,
+    title: "Allrecipes - Clone",
+    img1: allrecipes1,
+    img2: allrecipes2,
+    describe:
+      "An AllRecipes clone that empowers users to explore, create, and share recipes. It enables recipe image uploads, meal type selection, review submissions, and provides nutrition information through the Edamam API. Built with Next.js, Express.js, MongoDB, and enhanced with Redux and Tanstack Query for a dynamic, efficient user experience.",
+    tools: [
+      "Next.js",
+      "Express.js",
+      "MongoDB",
+      "Redux Toolkit",
+      "Tanstack Query",
+      "Edamam API",
+      "Tailwind CSS",
+    ],
+    liveLink: "https://allrecipes-clone.vercel.app",
+    fontEndLink: "https://github.com/abhijithjithu0007/Allrecipes-clone-client",
+    backEndLink: "https://github.com/abhijithjithu0007/Allrecipes-clone-server",
   },
 ];
 const Projects = () => {
