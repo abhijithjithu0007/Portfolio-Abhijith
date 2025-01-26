@@ -62,7 +62,7 @@ const Contact = () => {
             placeholder="Write your name"
             name="fullName"
             required
-            className="fullname bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-300 w-full placeholder:text-white/50"
+            className="fullname bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full placeholder:text-white/50"
           />
         </div>
         <div className="form-control overflow-hidden" ref={emailRef}>
@@ -71,7 +71,7 @@ const Contact = () => {
             placeholder="Write your email"
             name="email"
             required
-            className="email bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-300 w-full placeholder:text-white/50"
+            className="email bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full placeholder:text-white/50"
           />
         </div>
         <div
@@ -83,7 +83,7 @@ const Contact = () => {
             name="message"
             required
             rows="3"
-            className="message bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-xl sm:rounded-full md:rounded-full xl:rounded-full border-white/20 outline-none focus:border-cyan-400 duration-300 w-full resize-none placeholder:text-white/50"
+            className="message bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-xl sm:rounded-full md:rounded-full xl:rounded-full border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full resize-none placeholder:text-white/50"
           />
         </div>
 
@@ -94,8 +94,8 @@ const Contact = () => {
           <input
             type="submit"
             value="Send message"
-            className="uppercase cursor-pointer bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none
-        hover:bg-cyan-400/20 hover:border-cyan-400/20 focus:border-cyan-400 duration-300 w-full tracking-widest"
+            className="uppercase cursor-pointer bg-transparent border  py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none
+        hover:bg-[#0760fa] hover:text-black duration-300 w-full tracking-widest"
           />
         </div>
       </form>
@@ -111,7 +111,7 @@ const Contact = () => {
           <Toast.Action
             altText="Close"
             onClick={() => setOpen(false)}
-            className="text-cyan-400 cursor-pointer animate-fadeIn"
+            className="text-[#0760fa] cursor-pointer animate-fadeIn"
           >
             Close
           </Toast.Action>

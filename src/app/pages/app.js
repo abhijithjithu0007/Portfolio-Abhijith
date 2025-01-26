@@ -17,8 +17,7 @@ const App = () => {
   useCustomCursor(innerCursorRef, outerCursorRef);
 
   return (
-    <div className="app">
-      <div className="noise"></div>
+    <div className="app p-0 sm:p-10">
       <CustomCursor
         innerCursorRef={innerCursorRef}
         outerCursorRef={outerCursorRef}

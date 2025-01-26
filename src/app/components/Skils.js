@@ -23,7 +23,7 @@ const data = [
   { id: 16, skill: "Git" },
   { id: 17, skill: "GitHub" },
   { id: 18, skill: "Firebase" },
-  { id: 19, skill: "Vercel" },
+  { id: 19, skill: "Socket.io" },
   { id: 20, skill: "Jest.js" },
   { id: 21, skill: "Render" },
   { id: 22, skill: "Razorpay" },

@@ -6,8 +6,7 @@ import { useImageReveal, useHeadLineReveal } from "../Hooks/anime";
 
 const Hero = () => {
   const data = {
-    img1: "https://res.cloudinary.com/dgjjgijyu/image/upload/v1675868936/portfolio-project/hero-1_tjrcuk.jpg",
-    img2: "https://res.cloudinary.com/dgjjgijyu/image/upload/v1675868832/portfolio-project/hero-2_ewchqt.png",
+    img1: "https://res.cloudinary.com/dgjjgijyu/image/upload/v1675868832/portfolio-project/hero-2_ewchqt.png",
   };
   const heroimg = "/assets/images/heroimg.webp";
 
@@ -16,7 +15,7 @@ const Hero = () => {
   const heroHeadLine2Ref = useRef(null);
   const headlines = [heroHeadLine1Ref, heroHeadLine2Ref];
 
-  useHoverEffect(heroImageRef, heroimg, data.img2);
+  useHoverEffect(heroImageRef, data.img1, heroimg);
   useImageReveal(heroImageRef, 0.5);
   useHeadLineReveal(headlines, 1.5);
 

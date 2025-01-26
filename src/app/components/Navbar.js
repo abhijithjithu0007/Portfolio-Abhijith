@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useRef } from "react";
 import { useLinkReveal } from "../Hooks/anime";
@@ -23,46 +23,66 @@ const Navbar = ({ footerNav }) => {
   useLinkReveal(links, 2);
 
   return (
-    <nav
-      className={`flex justify-between p-10 sm:p-0 md:p-0 container mx-auto ${
-        footerNav ? "mt-40" : "mt-20"
-      } uppercase`}
-    >
+    <nav className="flex justify-between p-10 sm:p-0 md:p-0 container mx-auto uppercase">
       <div className="logo">
-        <a href="#home" className="link-item" ref={link1Ref}>
+        <a
+          href="#home"
+          className="link-item text-linkPrimary hover:text-linkHover"
+          ref={link1Ref}
+        >
           {footerNav ? "Go to top" : "Abhijith V"}
         </a>
       </div>
 
       <ul className="links flex flex-col gap-3">
         <li>
-          <a href="#home" className="link-item" ref={link2Ref}>
+          <a
+            href="#home"
+            className="link-item text-linkPrimary hover:text-linkHover"
+            ref={link2Ref}
+          >
             Home
           </a>
         </li>
         <li>
-          <a href="#projects" className="link-item" ref={link3Ref}>
+          <a
+            href="#projects"
+            className="link-item text-linkPrimary hover:text-linkHover"
+            ref={link3Ref}
+          >
             Projects
           </a>
         </li>
         <li>
-          <a href="#skills" className="link-item" ref={link4Ref}>
+          <a
+            href="#skills"
+            className="link-item text-linkPrimary hover:text-linkHover"
+            ref={link4Ref}
+          >
             Skills
           </a>
         </li>
         <li>
-          <a href="#about" className="link-item" ref={link5Ref}>
+          <a
+            href="#about"
+            className="link-item text-linkPrimary hover:text-linkHover"
+            ref={link5Ref}
+          >
             About
           </a>
         </li>
         <li>
-          <a href="#contact" className="link-item" ref={link6Ref}>
+          <a
+            href="#contact"
+            className="link-item text-linkPrimary hover:text-linkHover"
+            ref={link6Ref}
+          >
             Contact
           </a>
         </li>
         <li>
           <a
-            className="link-item"
+            className="link-item text-linkPrimary hover:text-linkHover"
             href="https://docs.google.com/document/d/1MQeo-_haxjE8SVT3h3A4pONv9t4qOdlcBIUjWQd0a4U/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"

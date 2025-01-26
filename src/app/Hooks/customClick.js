@@ -10,7 +10,7 @@ const FireworksEffect = () => {
 
     const ctx = canvasEl.getContext("2d");
     let numberOfParticules = 30;
-    const colors = ["#31E0E8", "#D9DBDB"];
+    const colors = ["#0760fa", "#D9DBDB"];
 
     function setCanvasSize() {
       canvasEl.width = window.innerWidth * 2;

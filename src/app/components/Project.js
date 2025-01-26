@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useRef } from "react";
 import { useHoverEffect } from "../Hooks/useHoverEffect";
@@ -9,11 +9,8 @@ const Project = ({ project }) => {
   const projectLeftRef = useRef(null);
   const projectRefs = [projectRightRef, projectLeftRef];
 
-  
-    useHoverEffect(projectRightRef, project.img1, project.img2);
-    useProjectLeftrightReveal(projectRefs);
-  
-  
+  useHoverEffect(projectRightRef, project.img1, project.img2);
+  useProjectLeftrightReveal(projectRefs);
 
   return (
     <div className="project flex flex-col lg:grid lg:grid-cols-5 gap-5 p-5 lg:p-10 overflow-hidden">
@@ -24,14 +21,14 @@ const Project = ({ project }) => {
         <span className="text-5xl md:text-7xl lg:text-9xl text-white/20">
           {String(project.id).padStart(2, 0)}
         </span>
-        <h3 className="uppercase text-2xl md:text-4xl lg:text-5xl leading-relaxed text-cyan-400">
+        <h3 className="uppercase text-2xl md:text-4xl lg:text-5xl leading-relaxed text-[#0760fa]">
           {project.title}
         </h3>
         <p className="text-sm md:text-base lg:text-lg text-white/75">
           {project.describe}
         </p>
 
-        <span className="text-cyan-400 flex gap-2 md:gap-4 lg:gap-5 flex-wrap">
+        <span className="text-[#0760fa] flex gap-2 md:gap-4 lg:gap-5 flex-wrap">
           {project.tools.map((tool, i) => (
             <span key={i} className="text-xs md:text-sm lg:text-base">
               {tool}
