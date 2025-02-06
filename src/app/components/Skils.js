@@ -29,6 +29,8 @@ const data = [
   { id: 22, skill: "Razorpay" },
   { id: 23, skill: "Self-Learning" },
   { id: 24, skill: "Scrum & Agile" },
+  { id: 25, skill: "Redis" },
+  { id: 26, skill: "Zustand" },
 ];
 
 const Skills = () => {
