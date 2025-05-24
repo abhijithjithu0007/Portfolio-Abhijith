@@ -21,14 +21,14 @@ const Project = ({ project }) => {
         <span className="text-5xl md:text-7xl lg:text-9xl text-white/20">
           {String(project.id).padStart(2, 0)}
         </span>
-        <h3 className="uppercase text-2xl md:text-4xl lg:text-5xl leading-relaxed text-[#0760fa]">
+        <h3 className="uppercase text-2xl md:text-4xl lg:text-5xl leading-relaxed text-gray-400">
           {project.title}
         </h3>
-        <p className="text-sm md:text-base lg:text-lg text-white/75">
+        <p className="text-sm md:text-base lg:text-base text-white/75">
           {project.describe}
         </p>
 
-        <span className="text-[#0760fa] flex gap-2 md:gap-4 lg:gap-5 flex-wrap">
+        <span className="text-gray-500 flex gap-2 md:gap-4 lg:gap-5 flex-wrap">
           {project.tools.map((tool, i) => (
             <span key={i} className="text-xs md:text-sm lg:text-base">
               {tool}
