@@ -4,23 +4,33 @@ import React, { useRef } from "react";
 import { useHoverEffect } from "../Hooks/useHoverEffect";
 import SectionTitle from "./SectionTitle";
 import { useProjectLeftrightReveal } from "../Hooks/anime";
+import Image from "next/image";
 
 const About = () => {
   const aboutLeftRef = useRef(null);
   const aboutRightRef = useRef(null);
-  const profile = "/assets/images/profile.png";
+  // const profile = "/assets/images/profile.png";
   const discus = "/assets/images/discussion.jpg";
 
   const aboutRefs = [aboutLeftRef, aboutRightRef];
 
-  useHoverEffect(aboutLeftRef, discus, profile);
+  useHoverEffect(aboutLeftRef, discus);
   useProjectLeftrightReveal(aboutRefs);
 
   return (
     <div className="about-section p-4 container mx-auto mt-40" id="about">
       <SectionTitle title={"About"} />
       <div className="about-wrapper mt-40 flex flex-col md:flex-row gap-20 overflow-hidden">
-        <div className="about-left" ref={aboutLeftRef}></div>
+        <div className="">
+          <Image
+            src={discus}
+            alt=""
+            width={500}
+            height={500}
+            className="w-full h-[400px] object-cover"
+            ref={aboutLeftRef}
+          />
+        </div>
         <div className="about-right flex-1" ref={aboutRightRef}>
           <p>
             Self-taught MERN Stack Developer with extensive expertise in

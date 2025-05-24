@@ -235,7 +235,7 @@ body {
 }
 
 .skill-number {
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -249,11 +249,11 @@ body {
   }
 
   .skill-number {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .skill-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -267,7 +267,7 @@ body {
   }
 
   .skill-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

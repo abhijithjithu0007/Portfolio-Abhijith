@@ -18,20 +18,14 @@ const data = [
   { id: 11, skill: "Node.js" },
   { id: 12, skill: "MongoDB" },
   { id: 13, skill: "MySQL" },
-  { id: 14, skill: "SASS" },
-  { id: 15, skill: "Material UI" },
-  { id: 16, skill: "Git" },
-  { id: 17, skill: "GitHub" },
-  { id: 18, skill: "Firebase" },
-  { id: 19, skill: "Socket.io" },
-  { id: 20, skill: "Jest.js" },
-  { id: 21, skill: "Render" },
-  { id: 22, skill: "Razorpay" },
-  { id: 23, skill: "Self-Learning" },
-  { id: 24, skill: "Scrum & Agile" },
-  { id: 25, skill: "Redis" },
-  { id: 26, skill: "Zustand" },
+  { id: 14, skill: "Material UI" },
+  { id: 15, skill: "Git" },
+  { id: 16, skill: "GitHub" },
+  { id: 17, skill: "Self-Learning" },
+  { id: 18, skill: "Scrum & Agile" },
+  { id: 19, skill: "Zustand" },
 ];
+
 
 const Skills = () => {
   const skillItemRef = useRef([]);
