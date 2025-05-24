@@ -62,7 +62,7 @@ const Contact = () => {
             placeholder="Write your name"
             name="fullName"
             required
-            className="fullname bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full placeholder:text-white/50"
+            className="fullname rounded-lg bg-transparent border py-4 md:py-10 px-4 md:px-18  border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full placeholder:text-white/50 placeholder:text-center"
           />
         </div>
         <div className="form-control overflow-hidden" ref={emailRef}>
@@ -71,7 +71,7 @@ const Contact = () => {
             placeholder="Write your email"
             name="email"
             required
-            className="email bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-full border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full placeholder:text-white/50"
+            className="email rounded-lg bg-transparent border py-4 md:py-10 px-4 md:px-18 border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full placeholder:text-white/50 placeholder:text-center"
           />
         </div>
         <div
@@ -83,7 +83,7 @@ const Contact = () => {
             name="message"
             required
             rows="3"
-            className="message bg-transparent border py-4 md:py-16 px-4 md:px-28 rounded-xl sm:rounded-full md:rounded-full xl:rounded-full border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full resize-none placeholder:text-white/50"
+            className="message bg-transparent border py-4 md:py-10 px-4 md:px-18 rounded-lg border-white/20 outline-none focus:border-[#0760fa] duration-300 w-full resize-none placeholder:text-white/50 placeholder:text-center"
           />
         </div>
 
